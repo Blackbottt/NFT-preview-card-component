@@ -14,37 +14,77 @@ body {
     display: flex;
     flex-direction: column;
     background-color:  hsl(216, 50%, 16%);
-    height: 400px;
-    width: 220px;
-    padding: 10;
+    height: 370px;
+    width: 200px;
+    padding: 10px;
     border-radius: 5px;
+    margin: 30px;
 }
-img {
+.img > img {
     height: 200px;
     width: 200px;
     border-radius: 5px;
-    margin: 10px;
+    margin: 0px;
+}
+.img > img:hover {
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    margin: 0px;
+    opacity: 0.3;
+}
+.img:hover {
+    background-color: aqua;
+    z-index: 2;
+    opacity: 1;
 }
 hr {
     color: hsl(215, 32%, 27%);
+    margin-top: 5px;
 }
-#head, #name {
+.headnName {
     color: #fff;
     margin: 5px;
+}
+.headtoName:hover {
+    color: hsl(178, 100%, 50%);
+}
+.name {
+    color: #fff;
+}
+.profile {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    padding-top: 10px;
 }
 #pssge {
     margin: 10px;
 }
-#eth, #time {
-    display: inline-block;
+#name {
+    font-size: 13px;
+    margin-top: 12px;
 }
-#name-pssge {
-    font-size: 15px;
+.text {
+    color: hsl(215, 51%, 70%);
 }
-#name-pssge > img {
+svg {
+    position: relative;
+    margin-right: 5px;
+    padding-bottom: -20px;
+}
+#eth {
     display: inline-block;
-    height: 30px;
-    width: 30px;
+    color: hsl(178, 100%, 50%);
+}
+#days {
+    display: inline-block;
+    margin-left: 10px;
+}
+.profile > img {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
 }
 .attribution {
